@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'todo_list_store.dart';
 import 'todo.dart';
 import 'package:date_time_picker/date_time_picker.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 
 /// Todo入力画面のクラス
 ///
@@ -79,6 +78,7 @@ class _TodoInputPageState extends State<TodoInputPage> {
         // アプリケーションバーに表示するタイトル
         title: Text(_isCreateTodo ? 'Todo追加' : 'Todo更新'),
       ),
+      resizeToAvoidBottomInset: false,
       body: Container(
         // 全体のパディング
         padding: const EdgeInsets.all(30),
